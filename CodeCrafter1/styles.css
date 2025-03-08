@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Sections: Quiz, Leaderboard, Dashboard */
+.quiz-section, .leaderboard, .dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Buttons */
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .quiz-section, 
+.dark-mode .leaderboard, 
+.dark-mode .dashboard {
+    background: #555;
+    color: white;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Dark Mode List Styling */
+.dark-mode li {
+    background: #777;
+    color: white;
+}

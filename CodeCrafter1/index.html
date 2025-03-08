@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech AI Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>EdTech AI Platform</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <!-- Quiz Section -->
+        <div class="quiz-section">
+            <h2>DSA Quiz</h2>
+            <div id="question-container"></div>
+            <button id="next-btn">Next</button>
+            <p id="timer">Time Left: <span id="time">30</span> sec</p>
+        </div>
+
+        <!-- Leaderboard -->
+        <div class="leaderboard">
+            <h2>Leaderboard 🏆</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <h2>User Dashboard</h2>
+            <p><b>Performance Score:</b> <span id="score">0</span></p>
+            <p><b>Completed Quizzes:</b> <span id="quizCount">0</span></p>
+            <button id="study-plan-btn">Generate Study Plan</button>
+            <div id="study-plan"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
