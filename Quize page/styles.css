@@ -1,0 +1,154 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 24px;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: #f1c40f;
+    color: black;
+}
+
+/* Quiz Container */
+.quiz-container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+body.dark-mode .quiz-container {
+    background: #222;
+}
+
+/* Topic List */
+.topic-list {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.topic-list li {
+    background: #e0e0e0;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+body.dark-mode .topic-list li {
+    background: #333;
+}
+
+/* Quiz Box */
+.quiz-box h3 {
+    margin-bottom: 15px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #0056b3;
+}
+
+#next-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background: #218838;
+}
+
+/* Progress Bar */
+.progress {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background: #ddd;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #28a745;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+body.dark-mode .result-box {
+    background: #444;
+}

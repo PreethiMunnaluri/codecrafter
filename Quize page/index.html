@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>AI-Powered DSA Quiz</h1>
+    </header>
+
+    <main>
+        <!-- Quiz Container -->
+        <div class="quiz-container">
+            <h2>Topics Covered</h2>
+            <ul class="topic-list">
+                <li>Dynamic Arrays</li>
+                <li>Graphs</li>
+                <li>Recursion</li>
+                <li>Sorting Algorithms</li>
+                <li>Dynamic Programming</li>
+            </ul>
+
+            <div class="quiz-box">
+                <h3 id="question-text">Loading question...</h3>
+                <div class="options">
+                    <button class="option" onclick="selectAnswer(this)">Option 1</button>
+                    <button class="option" onclick="selectAnswer(this)">Option 2</button>
+                    <button class="option" onclick="selectAnswer(this)">Option 3</button>
+                    <button class="option" onclick="selectAnswer(this)">Option 4</button>
+                </div>
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+            </div>
+
+            <!-- Timer and Progress Bar -->
+            <div class="progress">
+                <div id="timer">Time Left: 30s</div>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="result-box">
+                <h3>Quiz Results</h3>
+                <p><strong>Accuracy:</strong> <span id="accuracy">0%</span></p>
+                <p><strong>Strengths:</strong> <span id="strengths">-</span></p>
+                <p><strong>Weak Areas:</strong> <span id="weaknesses">-</span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
