@@ -83,7 +83,7 @@ function App() {
 
   return (
     <div>
-      <h1>DSA Quiz</h1>
+      <h1>Quiz</h1>
       {questions.length > 0 ? (
         questions.map((q, index) => (
           <div key={index} style={{ marginBottom: "20px", border: "1px solid black", padding: "10px" }}>
